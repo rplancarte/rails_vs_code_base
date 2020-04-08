@@ -1,0 +1,41 @@
+Style/FrozenStringLiteralComment:
+  Description: >-
+                 Add the frozen_string_literal comment to the top of files
+                 to help transition to frozen string literals by default.
+  Enabled: false
+
+Layout/LineLength:
+  Description: 'Limit lines to 80 characters.'
+  Enabled: true
+  Max: 200
+
+Style/Lambda:
+  Description: 'Use the new lambda literal syntax for single-line blocks.'
+  StyleGuide: '#lambda-multi-line'
+  Enabled: true
+  VersionAdded: '0.9'
+  VersionChanged: '0.40'
+  SupportedStyles:
+    - lambda
+    - literal
+
+Layout/SpaceInsideHashLiteralBraces:
+  Description: "Use spaces inside hash literal braces - or don't."
+  StyleGuide: '#spaces-operators'
+  Enabled: true
+  VersionAdded: '0.49'
+  EnforcedStyle: no_space
+
+Metrics/MethodLength:
+  Description: 'Avoid methods longer than 10 lines of code.'
+  StyleGuide: '#short-methods'
+  Enabled: true
+  Max: 30
+
+Layout/HashAlignment:
+  Description: >-
+    Align the elements of a hash literal if they span more than
+    one line.
+  Enabled: true
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table

@@ -1,0 +1,7 @@
+[user]
+        #email = rplancarte@outmatch.com
+        #name = Roberto Plancarte
+[credential]
+        helper = "!f() { /root/.vscode-server/bin/0ba0ca52957102ca3527cf479571617f0de6ed50/node /tmp/vscode-remote-containers-a70295db87e807bfc23d340891f773f48373c7f2.js $*; }; f"
+[alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

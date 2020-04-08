@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "3000:3000"
+    tmpfs: 
+      - /usr/src/app/tmp
+    depends_on:
+      - db
+    command: bundle exec rails s -b 0.0.0.0 -p 3000
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
